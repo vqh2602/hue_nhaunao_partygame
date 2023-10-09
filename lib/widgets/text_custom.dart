@@ -836,7 +836,7 @@ TextStyle textStyleCustom(
     List<FontFeature>? fontFeatures,
     Paint? foreground,
     double? letterSpacing}) {
-  return GoogleFonts.beVietnamPro(
+  return GoogleFonts.comfortaa(
     fontSize: fontSize,
     color: color ?? Get.theme.colorScheme.onBackground,
     decoration: decoration,

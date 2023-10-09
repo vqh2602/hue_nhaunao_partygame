@@ -8,6 +8,7 @@ import 'package:hue_nhaunao_partygame/c_theme/c_theme.dart';
 import 'package:hue_nhaunao_partygame/config/config.dart';
 import 'package:hue_nhaunao_partygame/config/get_config.dart';
 import 'package:hue_nhaunao_partygame/init.dart';
+import 'package:hue_nhaunao_partygame/modules/splash/splash_screen.dart';
 import 'package:hue_nhaunao_partygame/routers.dart';
 Future<void> main() async {
   await GetStorage.init();
@@ -60,7 +61,7 @@ class MyApp extends StatelessWidget {
       transitionDuration: const Duration(milliseconds: 300),
       defaultTransition: Transition.fadeIn,
       //  initialRoute: LoginScreen.routeName,
-      initialRoute: '',
+      initialRoute: SplashScreen.routeName,
     );
   }
 }
