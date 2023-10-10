@@ -2,5 +2,5 @@
 
 FLUTTER_TARGET=lib/main_dev.dart
 ASSET_PREFIX=dev
-BUNDLE_NAME=Huệ Nhậu Nào! (dev)
-BUNDLE_DISPLAY_NAME=Huệ Nhậu Nào! (dev)
+BUNDLE_NAME=Nhậu ! (dev)
+BUNDLE_DISPLAY_NAME=Nhậu ! (dev)

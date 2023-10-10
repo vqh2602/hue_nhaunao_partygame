@@ -23,7 +23,7 @@ class LoadingCustom extends StatelessWidget {
               //         fit: BoxFit.fill)),
             ),
             Center(
-              child: Lottie.asset('assets/lottie/loadding.json',
+              child: Lottie.asset('assets/lottie/loading.json',
                   width: Get.width * 0.5, fit: BoxFit.fill),
             ),
           ],

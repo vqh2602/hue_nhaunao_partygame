@@ -2,9 +2,8 @@ import 'dart:async';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:hue_nhaunao_partygame/data/storage.dart';
-import 'package:hue_nhaunao_partygame/modules/home/home_screen.dart';
 
-class SplashController extends GetxController
+class HomeController extends GetxController
     with GetTickerProviderStateMixin, StateMixin {
   GetStorage box = GetStorage();
   var arguments = Get.arguments;
@@ -16,26 +15,20 @@ class SplashController extends GetxController
   }
 
   Future<void> checkLogin() async {
-    loadingUI();
     var dataUser = await box.read(Storages.dataUser);
     // kiểm tra dữ liệu user và thời gian đăng nhập
     // Future.delayed(const Duration(seconds: 5), () {
     //   Get.offAndToNamed(HomeScreen.routeName);
     // });
     if (dataUser != null && await checkLoginTimeOut()) {
-      Future.delayed(const Duration(seconds: 3), () {
-        Get.offAndToNamed(HomeScreen.routeName);
+      Future.delayed(const Duration(seconds: 4), () {
+        // Get.offAndToNamed(HomeScreen.routeName);
       });
     } else {
       Future.delayed(const Duration(seconds: 4), () {
-        Future.delayed(const Duration(seconds: 3), () {
-          Get.offAndToNamed(HomeScreen.routeName);
-        });
-
         // Get.offAndToNamed(LoginScreen.routeName);
       });
     }
-    // changeUI();
   }
 
   Future<bool> checkLoginTimeOut() async {

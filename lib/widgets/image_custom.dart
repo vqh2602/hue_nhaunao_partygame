@@ -28,7 +28,7 @@ Widget imageNetwork({
 }) {
   return CachedNetworkImage(
     imageUrl: url,
-    fit: fit,
+    fit: fit ?? BoxFit.cover,
     color: color,
     height: height,
     width: width,

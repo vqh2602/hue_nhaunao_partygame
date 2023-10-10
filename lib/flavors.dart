@@ -11,9 +11,9 @@ class F {
   static String get title {
     switch (appFlavor) {
       case Flavor.dev:
-        return 'Huệ Nhậu Nào! (dev)';
+        return 'Nhậu ! (dev)';
       case Flavor.prod:
-        return 'Huệ Nhậu Nào!';
+        return 'Nhậu !';
       default:
         return 'title';
     }

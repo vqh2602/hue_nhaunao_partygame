@@ -52,6 +52,8 @@ dependencies:
   convert_vietnamese: ^0.0.9
   cached_network_image: ^3.3.0
   photo_view: ^0.14.0
+  sticky_headers: ^0.3.0+2
+  flutter_staggered_animations: ^1.1.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -114,7 +116,7 @@ flavorizr:
   flavors:
     dev:
       app:
-        name: Huệ Nhậu Nào! (dev)
+        name: Nhậu ! (dev)
         icon: assets/logo/logo.jpg
       android:
         applicationId: com.vqh2602.huenhaunaopartygame
@@ -122,7 +124,7 @@ flavorizr:
         bundleId: com.vqh2602.huenhaunaopartygame
     prod:
       app:
-        name: Huệ Nhậu Nào!
+        name: Nhậu !
         icon: assets/logo/logo.jpg
       android:
         applicationId: com.vqh2602.huenhaunaopartygame

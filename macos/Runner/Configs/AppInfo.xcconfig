@@ -8,7 +8,7 @@
 PRODUCT_NAME = hue_nhaunao_partygame
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.hueNhaunaoPartygame
+PRODUCT_BUNDLE_IDENTIFIER = com.vqh2602.huenhaunaopartygame
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2023 com.example. All rights reserved.

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hue_nhaunao_partygame/widgets/base/base.dart';
 import 'package:flutx_ui/flutx.dart';
+import 'package:hue_nhaunao_partygame/widgets/loading_custom.dart';
 import 'package:hue_nhaunao_partygame/widgets/text_custom.dart';
 import 'package:hue_nhaunao_partygame/widgets/widgets.dart';
 
@@ -71,15 +72,18 @@ class _SplashScreenState extends State<SplashScreen> {
                       Align(
                         alignment: Alignment.center,
                         child: FxButton.large(
-                            onPressed: () {},
+                            onPressed: () {
+                              splashController.checkLogin();
+                            },
                             borderRadiusAll: 100,
                             child: textLableLarge('Triển thôi !',
-                                color: Colors.white,fontWeight: FontWeight.w900)),
+                                color: Colors.white,
+                                fontWeight: FontWeight.w900)),
                       )
                     ],
                   ),
                 )),
           ],
-        ));
+        ),onLoading: const LoadingCustom());
   }
 }

@@ -15,6 +15,7 @@ Color a50 = const Color(0xffFDECEA);
 
 Color bg500 = const Color(0xffFAFCFF);
 Color bg700 = const Color(0xffF1F7FF);
+Color bgGray = const Color(0xffF5F6F7);
 
 class ThemeService {
   final _box = GetStorage();
@@ -43,9 +44,11 @@ class SThemeTask {
 
     /// AppBar Theme
     appBarTheme: const AppBarTheme(
-        backgroundColor: Color(0xffffffff),
-        iconTheme: IconThemeData(color: Color(0xff495057)),
-        actionsIconTheme: IconThemeData(color: Color(0xff495057))),
+      // backgroundColor: const Color(0xffffffff),
+      color: Colors.white,
+      elevation: 0,
+      shadowColor: Colors.white,
+    ),
 
     /// Card Theme
     cardTheme: const CardTheme(color: Color(0xfff0f0f0)),
