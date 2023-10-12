@@ -1,28 +1,52 @@
 
   
+
   
 
-# OMIYAGE!
+# Huệ!
 
-![enter image description here](https://i.imgur.com/ZRfFe9C.png)
+  
 
-Ứng dụng quản lý bán hàng - Đồ án tốt nghiệp
+![enter image description here](https://i.imgur.com/UXmCUmR.png)
+
+  
+
+Ứng dụng nhậu
+
 > phát triển bởi:
+
 >  - Vương Quang Huy
+>  - Nguyễn Công Chính
+
 ---
+
+  
 
 ## Bản cài
 
+  
+
 Android: [OMIYAGE - Ứng dụng trên Google Play](https://play.google.com/store/apps/details?id=com.vqh2602.qlbh.quan_ly_ban_hang)
+
+  
 
 Ios: [OMIYAGE - Ứng dụng trên IOS, IPAD](https://testflight.apple.com/join/zLF3f7X1)
 
+  
+
 ---
 
+  
+
 ## Quản lý phiên bản bằng sidekick
+
 [fluttertools/sidekick: A simple app to make Flutter development more delightful (github.com)](https://github.com/fluttertools/sidekick)
 
+  
+
 # Quy tắc github
+
+  
 
   
 
@@ -32,7 +56,11 @@ Ios: [OMIYAGE - Ứng dụng trên IOS, IPAD](https://testflight.apple.com/join/
 
   
 
+  
+
 Luôn tạo nhánh mới dừ develop, trước khi commit phải merge từ develop về để tránh khi merge tính năng vào dev bị confilic
+
+  
 
   
 
@@ -40,7 +68,11 @@ Luôn tạo nhánh mới dừ develop, trước khi commit phải merge từ dev
 
   
 
+  
+
 feature/ < tên tính năng >
+
+  
 
   
 
@@ -48,7 +80,11 @@ e.g: feature/fix_ui_bottomsheet
 
   
 
+  
+
 3.  **Yêu cầu comment giải thích code hàm sử lý để người sau có thể hiểu**
+
+  
 
   
 
@@ -60,7 +96,11 @@ e.g: feature/fix_ui_bottomsheet
 
   
 
+  
+
 1. Tên file, thư mục không được viết hoa
+
+  
 
   
 
@@ -68,7 +108,11 @@ eg: detail_plant_screen.dart
 
   
 
+  
+
 2. Tên class viết hoa chữ cái đầu sau mỗi phân cách
+
+  
 
   
 
@@ -76,7 +120,11 @@ eg: DetailPlantScreen
 
   
 
+  
+
 3. import thư viện hay file luôn luôn là dạng package
+
+  
 
   
 
@@ -84,7 +132,11 @@ eg: **đúng**: import 'package:calories/c_theme/c_theme.dart'; **sai**: import 
 
   
 
+  
+
 4. kích thước
+
+  
 
   
 
@@ -92,7 +144,11 @@ hệ số của 4
 
   
 
+  
+
 5. icon:
+
+  
 
   
 
@@ -100,7 +156,11 @@ https://lucide.dev/
 
   
 
+  
+
 6. commit code
+
+  
 
   
 
@@ -108,7 +168,11 @@ trước khi commit chạy: flutter analyze để đảm bảo không còn lỗi
 
   
 
+  
+
 7. Tổ chức thư mục:
+
+  
 
   
 
@@ -116,7 +180,11 @@ trước khi commit chạy: flutter analyze để đảm bảo không còn lỗi
 
   
 
+  
+
 *model*: chứa các đối tượng
+
+  
 
   
 
@@ -124,7 +192,11 @@ trước khi commit chạy: flutter analyze để đảm bảo không còn lỗi
 
   
 
+  
+
 **modules**: chứa 1 modul bao gồm 3 file *screen* , *binding*, *controller*, và file *routers.dart* quản lý tuyến đường
+
+  
 
   
 
@@ -132,7 +204,11 @@ trước khi commit chạy: flutter analyze để đảm bảo không còn lỗi
 
   
 
+  
+
 **assets**: quản lý ảnh, video, ... được import vào
+
+  
 
   
 
@@ -140,7 +216,11 @@ trước khi commit chạy: flutter analyze để đảm bảo không còn lỗi
 
   
 
+  
+
 sơ đồ:
+
+  
 
   
 
@@ -148,7 +228,11 @@ sơ đồ:
 
   
 
+  
+
 graph LR
+
+  
 
   
 
@@ -156,7 +240,11 @@ Project --> data
 
   
 
+  
+
 Project --> modules
+
+  
 
   
 
@@ -164,7 +252,11 @@ Project --> widget
 
   
 
+  
+
 Project --> assets
+
+  
 
   
 
@@ -172,7 +264,11 @@ Project --> c_theme
 
   
 
+  
+
 data --> model
+
+  
 
   
 
@@ -180,7 +276,11 @@ data --> repositories
 
   
 
+  
+
 modules --> screen
+
+  
 
   
 
@@ -188,11 +288,17 @@ modules --> binding
 
   
 
+  
+
 modules --> controller
 
   
 
+  
+
 modules --> routers.dart
+
+  
 
   
 
