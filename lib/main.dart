@@ -7,9 +7,9 @@ import 'package:hue_nhaunao_partygame/c_lang/c_translations.dart';
 import 'package:hue_nhaunao_partygame/c_theme/c_theme.dart';
 import 'package:hue_nhaunao_partygame/config/config.dart';
 import 'package:hue_nhaunao_partygame/config/get_config.dart';
-import 'package:hue_nhaunao_partygame/init.dart';
+import 'package:hue_nhaunao_partygame/routers/init.dart';
 import 'package:hue_nhaunao_partygame/modules/splash/splash_screen.dart';
-import 'package:hue_nhaunao_partygame/routers.dart';
+import 'package:hue_nhaunao_partygame/routers/routers.dart';
 Future<void> main() async {
   await GetStorage.init();
   WidgetsFlutterBinding.ensureInitialized();
