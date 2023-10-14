@@ -73,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     cHeight(20),
                     SizedBox(
                         width: Get.width,
-                        height: Get.width * 0.3,
+                        height: Get.width * 0.32,
                         child: listviewItem()),
                     cHeight(20),
                     StickyHeader(

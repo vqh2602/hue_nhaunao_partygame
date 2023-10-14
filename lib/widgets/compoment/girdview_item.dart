@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
+import 'package:hue_nhaunao_partygame/data/data_local/data_game.dart';
 import 'package:hue_nhaunao_partygame/modules/detail_game/detail_game_screen.dart';
 import 'package:hue_nhaunao_partygame/widgets/image_custom.dart';
 import 'package:hue_nhaunao_partygame/widgets/text_custom.dart';
@@ -11,7 +12,7 @@ import 'package:hue_nhaunao_partygame/widgets/widgets.dart';
 Widget gridviewItem() {
   return AnimationLimiter(
     child: GridView.builder(
-      itemCount: 10,
+      itemCount: listDataGame.length,
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       itemBuilder: (BuildContext context, int index) {
@@ -24,7 +25,7 @@ Widget gridviewItem() {
               child: GestureDetector(
                 onTap: () {
                   Get.toNamed(DetailGameScreen.routeName,
-                      arguments: {"index": index});
+                      arguments: {"index": index, "data": listDataGame[index]});
                 },
                 child: Container(
                   height: double.infinity,
@@ -41,7 +42,7 @@ Widget gridviewItem() {
                             child: ClipRRect(
                                 borderRadius: BorderRadius.circular(20),
                                 child: imageNetwork(
-                                    url: 'https://i.imgur.com/efGHYDc.png',
+                                    url: listDataGame[index].image,
                                     fit: BoxFit.cover)),
                           ),
                         ),
@@ -71,12 +72,11 @@ Widget gridviewItem() {
                               mainAxisSize: MainAxisSize.min,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                textTitleMedium('Vòng quay nhậu',
+                                textTitleMedium(listDataGame[index].title,
                                     fontWeight: FontWeight.w900,
                                     color: Colors.white),
                                 cHeight(8),
-                                textBodySmall(
-                                    'Ngẫu nhiên trả lời những câu hỏi, được thì tha mà ba la thì uống!.',
+                                textBodySmall(listDataGame[index].description,
                                     maxLines: 3,
                                     overflow: TextOverflow.ellipsis,
                                     color: Colors.white),

@@ -23,14 +23,14 @@ class SplashController extends GetxController
     //   Get.offAndToNamed(HomeScreen.routeName);
     // });
     if (dataUser != null && await checkLoginTimeOut()) {
-      Future.delayed(const Duration(seconds: 3), () {
+      Future.delayed(const Duration(seconds: 2), () {
         Get.offAndToNamed(HomeScreen.routeName);
       });
     } else {
-      Future.delayed(const Duration(seconds: 4), () {
-        Future.delayed(const Duration(seconds: 3), () {
+      Future.delayed(const Duration(seconds: 2), () {
+      
           Get.offAndToNamed(HomeScreen.routeName);
-        });
+        
 
         // Get.offAndToNamed(LoginScreen.routeName);
       });
